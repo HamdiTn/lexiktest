@@ -1,0 +1,15 @@
+lexiktest_users:
+    resource: "@lexiktestBundle/Controller/UsersController.php"
+    type:     annotation
+
+lexiktest_groups:
+    resource: "@lexiktestBundle/Controller/GroupsController.php"
+    type:     annotation
+
+lexiktest:
+    resource: "@lexiktestBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation

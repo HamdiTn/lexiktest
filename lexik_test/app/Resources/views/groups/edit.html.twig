@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+
+    <h1>Modifier Group</h1>
+
+    {{ form_start(edit_form) }}
+    <div class="form-group col-sm-8">
+        <p><label for="contactname">Nom du groupe<span>*</span></label>
+            {{ form_widget(edit_form.name, {'attr': {'class': 'form-control','required':'required'}}) }}
+            {{ form_errors(edit_form.name) }}
+        </p>
+    </div>
+    <div class="form-group col-sm-5">
+        <p>
+            <input type="submit" value="Modifier" class="btn btn-warning" />
+        </p>
+    </div>
+    {{ form_end(edit_form) }}
+
+{% endblock %}
